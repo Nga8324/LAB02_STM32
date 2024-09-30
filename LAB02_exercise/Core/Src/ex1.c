@@ -103,18 +103,18 @@ void display7SEG(int num){
 			break;
 		}
 }
-
+int cycle_clock =10;
 int timer1_counter = 0;
 int timer1_flag = 0;
 void setTimer1(int duration1){
-	timer1_counter = duration1;
+	timer1_counter = duration1 / cycle_clock;
 	timer1_flag = 0;
 }
 
 int timer2_counter = 0;
 int timer2_flag = 0;
 void setTimer2(int duration2){
-	timer2_counter = duration2;
+	timer2_counter = duration2 / cycle_clock;
 	timer2_flag = 0;
 }
 
