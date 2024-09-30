@@ -94,22 +94,23 @@ void display7SEG(int num)
 		HAL_GPIO_WritePin(SEG_6_GPIO_Port, SEG_6_Pin, GPIO_PIN_RESET);
 		break;
 	default:
-		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_All, SET);
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_All, SET);
 		break;
 	}
 }
 
+int timer_cycle = 10;
 int timer1_counter = 0;
 int timer1_flag = 0;
 void setTimer1(int duration1){
-	timer1_counter = duration1;
+	timer1_counter = duration1 / timer_cycle;
 	timer1_flag = 0;
 }
 
 int timer2_counter = 0;
 int timer2_flag = 0;
 void setTimer2(int duration2){
-	timer2_counter = duration2;
+	timer2_counter = duration2 / timer_cycle;
 	timer2_flag = 0;
 }
 

@@ -100,8 +100,8 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  setTimer1(100);
-  setTimer2(50);
+  setTimer1(1000);
+  setTimer2(500);
   int status_7seg = 1;
   while (1)
   {
@@ -109,13 +109,13 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  if(timer1_flag == 1){
-		  setTimer1(100);
+		  setTimer1(1000);
 		  HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
 		  HAL_GPIO_TogglePin(DOT_GPIO_Port, DOT_Pin);
 	  }
 
 	  if(timer2_flag == 1){
-		  setTimer2(50);
+		  setTimer2(500);
 		  switch(status_7seg){
 		  case 1:
 			  HAL_GPIO_WritePin(EN0_GPIO_Port, EN0_Pin, GPIO_PIN_RESET);
