@@ -1,5 +1,5 @@
-ex4.c:9:6:display7SEG	16	static
-ex4.c:109:6:update7SEG	16	static
-ex4.c:147:6:setTimer1	16	static
-ex4.c:155:6:setTimer2	16	static
-ex4.c:159:6:timerRun	4	static
+ex4.c:3:6:display7SEG	16	static
+ex4.c:103:6:update7SEG	16	static
+ex4.c:141:6:setTimer1	16	static
+ex4.c:149:6:setTimer2	16	static
+ex4.c:153:6:timerRun	4	static

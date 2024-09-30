@@ -1,11 +1,5 @@
-/*
- * ex4.c
- *
- *  Created on: Sep 30, 2024
- *      Author: Admin
- */
-
 #include "ex4.h"
+
 void display7SEG(int num){
 	switch(num){
 	case 0:
@@ -149,7 +143,7 @@ void setTimer1(int duration1){
 	timer1_flag = 0;
 }
 
-int timer2_cycle = 10;
+int timer2_cycle = 20;
 int timer2_counter = 0;
 int timer2_flag = 0;
 void setTimer2(int duration2){
