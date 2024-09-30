@@ -504,7 +504,7 @@ void display7SEG(int num){
 08000478 <update7SEG>:
 const int MAX_LED = 4;
 int index_led = 0;
-int led_buffer[4] = {1, 2, 3, 4};
+int led_buffer[4] = {3, 6, 8, 9};
 void update7SEG(int index){
  8000478:	b580      	push	{r7, lr}
  800047a:	b082      	sub	sp, #8
