@@ -23,6 +23,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "ex5.h"
+#include "software_timer.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -99,16 +100,23 @@ int main(void)
   minute = 59;
   second = 50;
   setTimer1(1000);
+  setTimer3(1000);
+  timer3_flag = 1;
   setTimer2(500);
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
 	  if(timer1_flag == 1){
 		  setTimer1(1000);
 		  HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
 		  HAL_GPIO_TogglePin(DOT_GPIO_Port,  DOT_Pin);
+	  }
+
+	  if(timer3_flag == 1){
+		  setTimer3(1000);
 		  second ++;
 		  if (second >= 60)
 		  {
@@ -124,9 +132,9 @@ int main(void)
 		  {
 			  hour = 0;
 		  }
-		 // HAL_Delay(1000);
+		  updateClockBuffer();
 	  }
-	  updateClockBuffer();
+
 	  if(timer2_flag == 1){
 		  setTimer2(500);
 		  update7SEG(index_led ++);
