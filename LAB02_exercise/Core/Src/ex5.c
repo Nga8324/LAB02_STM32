@@ -153,5 +153,21 @@ void updateClockBuffer (){
 	led_buffer[3] = minute % 10;
 }
 
-
+void display_clock(){
+	 second ++;
+	 if (second >= 60)
+	 {
+		 second = 0;
+	  	 minute++;
+	 }
+	 if(minute >= 60)
+	 {
+		 minute = 0;
+	  	 hour++;
+	 }
+	 if(hour >= 24)
+	 {
+		 hour = 0;
+	 }
+}
 

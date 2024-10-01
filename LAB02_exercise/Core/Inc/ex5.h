@@ -18,6 +18,6 @@ extern int second;
 void display7SEG();
 void update7SEG (int index);
 void updateClockBuffer();
-void display();
+void display_clock();
 
 #endif /* INC_EX5_H_ */

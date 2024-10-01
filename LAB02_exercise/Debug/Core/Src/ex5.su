@@ -1,3 +1,4 @@
 ex5.c:9:6:display7SEG	16	static
 ex5.c:111:6:update7SEG	16	static
 ex5.c:149:6:updateClockBuffer	4	static
+ex5.c:156:6:display_clock	4	static

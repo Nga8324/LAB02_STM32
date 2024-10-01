@@ -96,13 +96,14 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  setTimer1(1000);
+  setTimer3(1000);
+  setTimer2(500);
+
   hour = 13;
   minute = 59;
   second = 50;
-  setTimer1(1000);
-  setTimer3(1000);
   timer3_flag = 1;
-  setTimer2(500);
   while (1)
   {
     /* USER CODE END WHILE */
@@ -117,21 +118,7 @@ int main(void)
 
 	  if(timer3_flag == 1){
 		  setTimer3(1000);
-		  second ++;
-		  if (second >= 60)
-		  {
-			  second = 0;
-		  	  minute++;
-		  }
-		  if(minute >= 60)
-		  {
-			  minute = 0;
-		  	  hour++;
-		  }
-		  if(hour >= 24)
-		  {
-			  hour = 0;
-		  }
+		  display_clock();
 		  updateClockBuffer();
 	  }
 
