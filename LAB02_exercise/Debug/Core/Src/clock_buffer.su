@@ -1,0 +1,2 @@
+clock_buffer.c:11:6:updateClockBuffer	4	static
+clock_buffer.c:18:6:display_clock	4	static
