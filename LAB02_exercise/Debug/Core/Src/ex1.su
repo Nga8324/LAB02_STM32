@@ -1,4 +1,1 @@
 ex1.c:9:6:display7SEG	16	static
-ex1.c:109:6:setTimer1	16	static
-ex1.c:116:6:setTimer2	16	static
-ex1.c:121:6:timerRun	4	static
