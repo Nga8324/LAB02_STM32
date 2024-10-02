@@ -9,15 +9,15 @@
 #define INC_EX3_H_
 #include "main.h"
 
-extern int timer1_flag;
-extern int timer2_flag;
+//extern int timer1_flag;
+//extern int timer2_flag;
 extern int index_led;
 extern const int MAX_LED;
 
 void display7SEG();
 void update7SEG (int index);
-void setTimer1(int duration1);
-void setTimer2(int duraton2);
-void timerRun();
+//void setTimer1(int duration1);
+//void setTimer2(int duraton2);
+//void timerRun();
 
 #endif /* INC_EX3_H_ */
