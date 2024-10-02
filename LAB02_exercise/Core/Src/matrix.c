@@ -57,28 +57,28 @@ void displayLedMatrix(int row, int colData) {
 }
 void updateLedMatrix(int index){
 	switch(index){
-	case 0:// display row 0 of led matrix
+	case 0:
 		displayLedMatrix(0, matrix_buffer[0]);
 		break;
-	case 1:// display row 1 of led matrix
+	case 1:
 		displayLedMatrix(1, matrix_buffer[1]);
 		break;
-	case 2:// display row 2 of led matrix
+	case 2:
 		displayLedMatrix(2, matrix_buffer[2]);
 		break;
-	case 3:// display row 3 of led matrix
+	case 3:
 		displayLedMatrix(3, matrix_buffer[3]);
 		break;
-	case 4:// display row 4 of led matrix
+	case 4:
 		displayLedMatrix(4, matrix_buffer[4]);
 		break;
-	case 5:// display row 5 of led matrix
+	case 5:
 		displayLedMatrix(5, matrix_buffer[5]);
 		break;
-	case 6:// display row 6 of led matrix
+	case 6:
 		displayLedMatrix(6, matrix_buffer[6]);
 		break;
-	case 7:// display row 7 of led matrix
+	case 7:
 		displayLedMatrix(7, matrix_buffer[7]);
 		break;
 	default:

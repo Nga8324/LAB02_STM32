@@ -1573,7 +1573,7 @@ void updateLedMatrix(int index){
  8000b8c:	08000be9 	.word	0x08000be9
  8000b90:	08000bf7 	.word	0x08000bf7
 	switch(index){
-	case 0:// display row 0 of led matrix
+	case 0:
 		displayLedMatrix(0, matrix_buffer[0]);
  8000b94:	4b1e      	ldr	r3, [pc, #120]	; (8000c10 <updateLedMatrix+0xb0>)
  8000b96:	781b      	ldrb	r3, [r3, #0]
@@ -1582,7 +1582,7 @@ void updateLedMatrix(int index){
  8000b9c:	f7ff fee4 	bl	8000968 <displayLedMatrix>
 		break;
  8000ba0:	e031      	b.n	8000c06 <updateLedMatrix+0xa6>
-	case 1:// display row 1 of led matrix
+	case 1:
 		displayLedMatrix(1, matrix_buffer[1]);
  8000ba2:	4b1b      	ldr	r3, [pc, #108]	; (8000c10 <updateLedMatrix+0xb0>)
  8000ba4:	785b      	ldrb	r3, [r3, #1]
@@ -1591,7 +1591,7 @@ void updateLedMatrix(int index){
  8000baa:	f7ff fedd 	bl	8000968 <displayLedMatrix>
 		break;
  8000bae:	e02a      	b.n	8000c06 <updateLedMatrix+0xa6>
-	case 2:// display row 2 of led matrix
+	case 2:
 		displayLedMatrix(2, matrix_buffer[2]);
  8000bb0:	4b17      	ldr	r3, [pc, #92]	; (8000c10 <updateLedMatrix+0xb0>)
  8000bb2:	789b      	ldrb	r3, [r3, #2]
@@ -1600,7 +1600,7 @@ void updateLedMatrix(int index){
  8000bb8:	f7ff fed6 	bl	8000968 <displayLedMatrix>
 		break;
  8000bbc:	e023      	b.n	8000c06 <updateLedMatrix+0xa6>
-	case 3:// display row 3 of led matrix
+	case 3:
 		displayLedMatrix(3, matrix_buffer[3]);
  8000bbe:	4b14      	ldr	r3, [pc, #80]	; (8000c10 <updateLedMatrix+0xb0>)
  8000bc0:	78db      	ldrb	r3, [r3, #3]
@@ -1609,7 +1609,7 @@ void updateLedMatrix(int index){
  8000bc6:	f7ff fecf 	bl	8000968 <displayLedMatrix>
 		break;
  8000bca:	e01c      	b.n	8000c06 <updateLedMatrix+0xa6>
-	case 4:// display row 4 of led matrix
+	case 4:
 		displayLedMatrix(4, matrix_buffer[4]);
  8000bcc:	4b10      	ldr	r3, [pc, #64]	; (8000c10 <updateLedMatrix+0xb0>)
  8000bce:	791b      	ldrb	r3, [r3, #4]
@@ -1618,7 +1618,7 @@ void updateLedMatrix(int index){
  8000bd4:	f7ff fec8 	bl	8000968 <displayLedMatrix>
 		break;
  8000bd8:	e015      	b.n	8000c06 <updateLedMatrix+0xa6>
-	case 5:// display row 5 of led matrix
+	case 5:
 		displayLedMatrix(5, matrix_buffer[5]);
  8000bda:	4b0d      	ldr	r3, [pc, #52]	; (8000c10 <updateLedMatrix+0xb0>)
  8000bdc:	795b      	ldrb	r3, [r3, #5]
@@ -1627,7 +1627,7 @@ void updateLedMatrix(int index){
  8000be2:	f7ff fec1 	bl	8000968 <displayLedMatrix>
 		break;
  8000be6:	e00e      	b.n	8000c06 <updateLedMatrix+0xa6>
-	case 6:// display row 6 of led matrix
+	case 6:
 		displayLedMatrix(6, matrix_buffer[6]);
  8000be8:	4b09      	ldr	r3, [pc, #36]	; (8000c10 <updateLedMatrix+0xb0>)
  8000bea:	799b      	ldrb	r3, [r3, #6]
@@ -1636,7 +1636,7 @@ void updateLedMatrix(int index){
  8000bf0:	f7ff feba 	bl	8000968 <displayLedMatrix>
 		break;
  8000bf4:	e007      	b.n	8000c06 <updateLedMatrix+0xa6>
-	case 7:// display row 7 of led matrix
+	case 7:
 		displayLedMatrix(7, matrix_buffer[7]);
  8000bf6:	4b06      	ldr	r3, [pc, #24]	; (8000c10 <updateLedMatrix+0xb0>)
  8000bf8:	79db      	ldrb	r3, [r3, #7]
