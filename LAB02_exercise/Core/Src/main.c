@@ -23,6 +23,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "software_timer.h"
+#include "ex6.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -99,7 +100,8 @@ int main(void)
     hour = 13;
     minute = 59;
     second = 50;
-    //timer3_flag = 1;
+
+    timer1_flag = 1;
     while (1)
     {
       /* USER CODE END WHILE */
@@ -124,6 +126,7 @@ int main(void)
   		  }
   		  updateClockBuffer();
   	  }
+    }
   /* USER CODE END 3 */
 }
 
@@ -249,14 +252,28 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+int timer2_counter = 25; // led 7seg
+int timer3_counter = 100; // led red
 HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
 	timerRun();
-	  if(timer1_flag == 1){
-	  		  setTimer1(1000);
-	  		  HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
-	  		  HAL_GPIO_TogglePin(DOT_GPIO_Port,  DOT_Pin);
-	  	  }
+	if(timer3_counter > 0){
+		timer3_counter --;
+		if(timer3_counter <= 0){
+			timer3_counter = 100;
+			HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
+			HAL_GPIO_TogglePin(DOT_GPIO_Port,  DOT_Pin);
+		}
+	}
+	if(timer2_counter > 0){
+		timer2_counter --;
+		if(timer2_counter <= 0){
+			timer2_counter = 25;
+			update7SEG(index_led ++);
+			if(index_led >= MAX_LED) index_led = 0;
+		}
+	}
+
 }
 /* USER CODE END 4 */
 
