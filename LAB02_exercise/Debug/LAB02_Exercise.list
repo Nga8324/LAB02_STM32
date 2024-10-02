@@ -1317,7 +1317,7 @@ __STATIC_FORCEINLINE void __disable_irq(void)
 #include "matrix.h"
 
 int index_led_matrix = 0;
-uint8_t matrix_buffer [8] = {0x18, 0x24, 0x42, 0x42, 0x7e, 0x42, 0x42, 0x42};
+uint8_t matrix_buffer [8] = {0x18, 0x3C, 0x66, 0x66, 0x7E, 0x7E, 0x66, 0x66};
 void displayLedMatrix(int row, int colData) {
  8000968:	b580      	push	{r7, lr}
  800096a:	b082      	sub	sp, #8
