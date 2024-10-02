@@ -1678,6 +1678,7 @@ void updateLedMatrix(int index){
 void displayAnimation(){
  8000c34:	b480      	push	{r7}
  8000c36:	af00      	add	r7, sp, #0
+	// right to left
 	matrix_buffer[0] = (matrix_buffer[0] >> 1) | (matrix_buffer[0] << 7);
  8000c38:	4b39      	ldr	r3, [pc, #228]	; (8000d20 <displayAnimation+0xec>)
  8000c3a:	781b      	ldrb	r3, [r3, #0]
