@@ -284,7 +284,7 @@ int timer1_counter = 100; // led_red
 int timer2_counter = 50; // led_7seg
 int status = 1; // status of led_7seg
 
-HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim)
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim)
 {
 	//timerRun();
 	if(timer1_counter > 0){
