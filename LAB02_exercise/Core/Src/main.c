@@ -256,7 +256,7 @@ int status = 1; // status of led_7seg
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim)
 {
 	//timerRun();
-	if(timer1_counter > 0) {
+	if(timer1_counter > 0)
 		timer1_counter --;
 		if(timer1_counter <= 0){
 			timer1_counter = 100;
