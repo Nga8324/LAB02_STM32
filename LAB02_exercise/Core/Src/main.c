@@ -239,7 +239,6 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 int timer1_counter = 100; // led_red
 int timer2_counter = 50; // led_7seg
-int status = 1; // status of led 7seg
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim){
 	//timerRun();
 	if(timer1_counter > 0){
