@@ -27,23 +27,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000029  00000000  00000000  00020038  2**0
                   CONTENTS, READONLY
- 12 .debug_info   00009059  00000000  00000000  00020061  2**0
+ 12 .debug_info   0000904a  00000000  00000000  00020061  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 000019a4  00000000  00000000  000290ba  2**0
+ 13 .debug_abbrev 0000198c  00000000  00000000  000290ab  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 000009e8  00000000  00000000  0002aa60  2**3
+ 14 .debug_aranges 000009e8  00000000  00000000  0002aa38  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_ranges 00000900  00000000  00000000  0002b448  2**3
+ 15 .debug_ranges 00000900  00000000  00000000  0002b420  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  00016a71  00000000  00000000  0002bd48  2**0
+ 16 .debug_macro  00016a71  00000000  00000000  0002bd20  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0000af70  00000000  00000000  000427b9  2**0
+ 17 .debug_line   0000af70  00000000  00000000  00042791  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    0008243d  00000000  00000000  0004d729  2**0
+ 18 .debug_str    0008243d  00000000  00000000  0004d701  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000053  00000000  00000000  000cfb66  2**0
+ 19 .comment      00000053  00000000  00000000  000cfb3e  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00002798  00000000  00000000  000cfbbc  2**2
+ 20 .debug_frame  00002798  00000000  00000000  000cfb94  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -1273,7 +1273,7 @@ static void MX_GPIO_Init(void)
 08000948 <HAL_TIM_PeriodElapsedCallback>:
 
 /* USER CODE BEGIN 4 */
-HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
  8000948:	b580      	push	{r7, lr}
  800094a:	b082      	sub	sp, #8
