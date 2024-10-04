@@ -99,11 +99,11 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   setTimer1(1000);
   setTimer3(1000);
-  setTimer2(500);
+  setTimer2(250);
 
   hour = 13;
   minute = 59;
-  second = 50;
+  second = 55;
   timer3_flag = 1;
   while (1)
   {
@@ -123,7 +123,7 @@ int main(void)
 	  }
 
 	  if(timer2_flag == 1){
-	  	setTimer2(500);
+	  	setTimer2(250);
 	  	update7SEG(index_led ++);
 	  	if(index_led >= MAX_LED) index_led = 0;
 	  }
