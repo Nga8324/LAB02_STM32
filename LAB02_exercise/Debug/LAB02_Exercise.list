@@ -1233,7 +1233,7 @@ static void MX_GPIO_Init(void)
 08000908 <HAL_TIM_PeriodElapsedCallback>:
 
 /* USER CODE BEGIN 4 */
-HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
  8000908:	b580      	push	{r7, lr}
  800090a:	b082      	sub	sp, #8
