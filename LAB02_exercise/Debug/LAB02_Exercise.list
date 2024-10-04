@@ -855,7 +855,7 @@ int timer1_counter = 100; // led_red
 int timer2_counter = 50; // led_7seg
 
 int status = 1; // status of led_7seg
-HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim)
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim)
 {
  800064c:	b580      	push	{r7, lr}
  800064e:	b082      	sub	sp, #8
