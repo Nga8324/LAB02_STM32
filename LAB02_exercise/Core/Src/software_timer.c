@@ -17,7 +17,7 @@ void setTimer1(int duration){
 
 int timer2_counter = 0;
 int timer2_flag = 0;
-int timer2_cycle = 20;
+int timer2_cycle = 10;
 void setTimer2(int duration){
 	timer2_counter = duration / timer2_cycle;
 	timer2_flag = 0;
