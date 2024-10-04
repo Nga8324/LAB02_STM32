@@ -101,7 +101,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   setTimer1(1000);
   setTimer3(1000);
-  setTimer2(500);
+  setTimer2(250);
   setTimer4(1000);
   setTimer5(1000);
 
@@ -126,7 +126,7 @@ int main(void)
 	  }
 
 	  if(timer2_flag == 1){
-	  	setTimer2(500);
+	  	setTimer2(250);
 	  	update7SEG(index_led ++);
 	  	if(index_led >= MAX_LED) index_led = 0;
 	  }
